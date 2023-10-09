@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.loopexperiences",
+      "sha256_cert_fingerprints": [
+        "CC:9B:31:35:34:12:37:1E:76:99:58:59:F6:55:D7:EC:56:39:E2:A6:B0:2C:49:F4:30:57:8F:5D:F1:56:4F:5F"
+      ]
+    }
+  }
+]
