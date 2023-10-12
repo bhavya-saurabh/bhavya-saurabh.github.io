@@ -1,56 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bhavya's Blog</title>
+    <title>otsy.com</title>
     <style>
-      body {
-        text-align: center;
-        font-family: Arial, sans-serif;
-      }
-      h1 {
-        color: #333;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
-        margin: 20px;
+      iframe {
+        width: 100%;
+        height: 100vh;
+        border: none;
       }
     </style>
   </head>
   <body>
-    <h1>Bhavya's Blog</h1>
-    <div id="image-container"></div>
-
-    <script>
-      // Array of random image URLs
-      const imageUrls = [
-        'image1.jpg',
-        'image2.jpg',
-        'image3.jpg',
-        // Add more image URLs here
-      ];
-
-      // Function to get a random image URL
-      function getRandomImageUrl() {
-        const randomIndex = Math.floor(Math.random() * imageUrls.length);
-        return imageUrls[randomIndex];
-      }
-
-      // Function to display random images
-      function displayRandomImages() {
-        const imageContainer = document.getElementById('image-container');
-        for (let i = 0; i < 5; i++) {
-          // Display 5 random images
-          const img = document.createElement('img');
-          img.src = getRandomImageUrl();
-          imageContainer.appendChild(img);
-        }
-      }
-
-      // Call the function to display random images when the page loads
-      window.addEventListener('load', displayRandomImages);
-    </script>
+    <iframe src="https://social-dev.otsy.com"></iframe>
   </body>
 </html>
