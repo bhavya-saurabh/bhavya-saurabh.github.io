@@ -1,49 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
+   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Meta Tag Example</title>
-    <script>
-        // Get the venue_url and Open Graph properties from the address bar
-        const urlParams = new URLSearchParams(window.location.search);
-        const venueUrl = 10
-        const ogTitle = "Test this Website"
-        const ogDescription = "Awesome Website"
-        const ogImage = "https://cdn.pixabay.com/photo/2023/10/20/13/48/tamarin-8329530_1280.png"
-
-        if (venueUrl) {
-            // Create a new meta tag for venue_url
-            const venueMetaTag = document.createElement('meta');
-            venueMetaTag.setAttribute('name', 'venue-url');
-            venueMetaTag.setAttribute('content', venueUrl);
-            document.head.appendChild(venueMetaTag);
-
-            // Create Open Graph meta tags
-            if (ogTitle) {
-                const ogTitleMetaTag = document.createElement('meta');
-                ogTitleMetaTag.setAttribute('property', 'og:title');
-                ogTitleMetaTag.setAttribute('content', ogTitle);
-                document.head.appendChild(ogTitleMetaTag);
-            }
-
-            if (ogDescription) {
-                const ogDescriptionMetaTag = document.createElement('meta');
-                ogDescriptionMetaTag.setAttribute('property', 'og:description');
-                ogDescriptionMetaTag.setAttribute('content', ogDescription);
-                document.head.appendChild(ogDescriptionMetaTag);
-            }
-
-            if (ogImage) {
-                const ogImageMetaTag = document.createElement('meta');
-                ogImageMetaTag.setAttribute('property', 'og:image');
-                ogImageMetaTag.setAttribute('content', ogImage);
-                document.head.appendChild(ogImageMetaTag);
-            }
-        }
-    </script>
+    <meta name="description" content="Awesome Website">
+    <meta name="keywords" content="awesome, random, image">
+    <meta name="author" content="Your Name">
+    <title>Awesome</title>
+    <meta property="og:title" content="Awesome">
+    <meta property="og:description" content="Awesome Website">
+    <meta property="og:image" content="https://cdn.pixabay.com/photo/2023/10/20/13/48/tamarin-8329530_1280.png">
+    <meta property="og:image:width" content="150">
+    <meta property="og:image:height" content="150">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Awesome">
+    <meta name="twitter:description" content="Awesome Website">
+    <meta name="twitter:image" content="https://via.placeholder.com/150">
 </head>
-<body>
-  <p> test this site</p>
-</body>
+  </head>
+  <body>
+    <p>
+     Changed data for tewsting
+      quasi.
+    </p>
+  </body>
 </html>
